@@ -26,8 +26,8 @@ How to setup environment and run tests:
        docker build -t network_test_env .
 
   5.3 Run it:
-
-       docker run --net custom_network -it --name network_test_container network_test_env
+  
+    docker run --net custom_network -it --name network_test_container network_test_env
 
 6. In Network Testing Container interactive mode (Ubuntu), start tests with:
 
