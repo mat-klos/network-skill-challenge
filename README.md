@@ -13,6 +13,7 @@ How to setup environment and run tests:
 
 4. Run PostgreSQL Docker container:
    - Go to /PostgreSQL container/
+   
    - Run Docker Compose with:
 
             docker-compose up
@@ -21,15 +22,16 @@ How to setup environment and run tests:
 
 5. Run Network Testing Container:
    - Go to /Network Testing Container/
+   
    - Build it with:
    
            docker build -t network_test_env .
 
-  - Run it:
+   - Run it:
 
            docker run --net custom_network -it --name network_test_container network_test_env
 
-6. In Network Testing Container interactive mode (Ubuntu), start tests with:
+7. In Network Testing Container interactive mode (Ubuntu), start tests with:
 
         pytest VerifyStoredAssetData.py--json-report--json-report-file=report.json-v
     
